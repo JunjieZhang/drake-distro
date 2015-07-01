@@ -10,4 +10,5 @@ xfoil
 spotless
 drake
 yalmip
+mosek
 

@@ -1,0 +1,33 @@
+In Matlab:
+
+>> addpath_drake
+>> addpath '/home/junjie/mosek/7/toolbox/r2013a' 
+
+
+
+>> addpath_drake
+Adding /home/junjie/libs/drake-distro/build/matlab to the matlab path
+>> addpath '/home/junjie/mosek/7/toolbox/r2013a'
+>> runMixedIntegerSimpleForest
+ Added the lcm jar to your javaclasspath (found via cmake)
+Warning: Currently all of your LCM traffic will be broadcast to the network, because:
+  Loopback interface is not set to multicast.
+  Consider running: sudo /home/junjie/libs/drake-distro/drake/util/setup_loopback_multicast.sh
+ 
+> In checkDependency at 86
+  In checkDependency at 97
+  In runMixedIntegerEnvironment at 16
+  In runMixedIntegerSimpleForest at 21 
+ Added the lcmgl jar to your javaclasspath (found via cmake)
+ 
+ iris (Iterative Regional Inflation by SDP) is disabled. To enable it, install the IRIS matlab package from here: https://github.com/rdeits/iris-distro and re-run addpath_drake.
+ 
+Error using checkDependency (line 439)
+Cannot find required dependency: iris
+
+Error in runMixedIntegerEnvironment (line 17)
+checkDependency('iris');
+
+Error in runMixedIntegerSimpleForest (line 21)
+runMixedIntegerEnvironment(r, start, goal, lb, ub, seeds, degree, n_segments, n_regions);
+ 
