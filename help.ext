@@ -1,0 +1,4 @@
+In Matlab:
+
+>> addpath_drake
+>> addpath '/home/junjie/mosek/7/toolbox/r2013a' 
